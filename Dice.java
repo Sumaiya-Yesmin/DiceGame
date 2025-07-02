@@ -3,6 +3,10 @@ import java.util.Random;
 public class Dice {
     public static void main(String[] args)
     {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = sc.nextLine();
+        System.out.println("Hello, "+name+"!");
         Random rn = new Random();
         int dice1 = rn.nextInt(6);
         System.out.println("Rolling the dice...");
